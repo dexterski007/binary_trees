@@ -17,7 +17,7 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	return bst_checker(tree, NULL, NULL);
+	return (bst_checker(tree, NULL, NULL));
 }
 
 /**
@@ -40,5 +40,6 @@ int bst_checker(const binary_tree_t *tree, const binary_tree_t *min,
 		(tree->n >= max->n)))
 		return (0);
 
-	return (bst_checker(tree->left, min, tree) && bst_checker(tree->right, tree, max));
+	return (bst_checker(tree->left, min, tree) && bst_checker(tree->right,
+			tree, max));
 }
