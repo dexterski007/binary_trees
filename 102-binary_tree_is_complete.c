@@ -9,7 +9,7 @@ size_t binary_tree_size(const binary_tree_t *tree);
  *
  * @tree: pointer to root
  *
- * Return 0 or 1
+ * Return: 0 or 1
  */
 
 
@@ -24,8 +24,11 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 /**
  * binary_tree_check_complete - check complete
  *
- * @queue: queue
- * @node: node
+ * @tree: tree pointer
+ * @index: index
+ * @count: count
+ *
+ * Return: 1 or 0
  */
 
 
