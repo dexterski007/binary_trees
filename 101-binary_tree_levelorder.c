@@ -44,7 +44,8 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 
 void enqueue(queue_t **queue, const binary_tree_t *node)
 {
-	queue_t *current, *new = malloc(sizeof (queue_t));
+	queue_t *current, *new = malloc(sizeof(queue_t));
+
 	if (new == NULL)
 		return;
 
@@ -66,6 +67,8 @@ void enqueue(queue_t **queue, const binary_tree_t *node)
  * dequeue - remove from queue
  *
  * @queue: double pointer to queue
+ *
+ * Return: node
  */
 
 
@@ -82,6 +85,6 @@ const binary_tree_t *dequeue(queue_t **queue)
 	*queue = (*queue)->next;
 	free(temp);
 
-	return node;
+	return (node);
 
 }
