@@ -23,6 +23,7 @@ avl_t *sorted_array_to_avl(int *array, size_t size)
 /**
  * sorted_recursion - recursion while avl
  *
+ * @parent: parent node
  * @array: array of value
  * @begin: beginning of array
  * @end: end of array
