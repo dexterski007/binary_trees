@@ -4,7 +4,7 @@ int height(const binary_tree_t *tree);
 int check_bst(const binary_tree_t *tree, int min, int max);
 
 /**
- * height checker - calculate height
+ * height - calculate height
  *
  * @tree: pointer to tree
  *
